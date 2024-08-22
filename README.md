@@ -1,2 +1,2 @@
-# contact-manager-project
-555
+# contact-manager-starter
+Starter Project for the Junit 5 Tutorial
