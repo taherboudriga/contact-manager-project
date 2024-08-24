@@ -1,5 +1,3 @@
-package com.programming.techie;
-
 public class Contact {
     private String firstName;
     private String lastName;
@@ -15,8 +13,24 @@ public class Contact {
         return firstName;
     }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
     public String getLastName() {
         return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public void validateFirstName() {
@@ -30,7 +44,7 @@ public class Contact {
     }
 
     public void validatePhoneNumber() {
-        if (this.phoneNumber.isBlank()) {
+        if (this.phoneNumber.isBlank()){
             throw new RuntimeException("Phone Name Cannot be null or empty");
         }
 
@@ -45,4 +59,3 @@ public class Contact {
         }
     }
 }
-
